@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="show.js"></script>
+    </head>
+    <body>
+        <div id="student_labels"></div>
+        <div id="lesson_labels"></div>
+        <label>Add a lesson to this student</label>
+        <form method="POST" action="http://localhost:3000/student_lessons">
+            <select name="lesson">
+            </select>
+            <input type="hidden" name="student" value="" id="hidden_student">
+            <input type="submit" value="Add Lesson">
+        </form>
+    </body>
+</html>

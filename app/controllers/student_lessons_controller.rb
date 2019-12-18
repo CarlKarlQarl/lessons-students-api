@@ -14,7 +14,7 @@ class StudentLessonsController < ApplicationController
             student: Student.find(params[:student]),
             lesson: Lesson.find(params[:lesson])
         )
-        render json: student_lesson
+        redirect_to "http://localhost:3001/show.html?id=#{params[:student]}"
     end
 
     def update
